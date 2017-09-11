@@ -5,13 +5,16 @@
 //         "lon": -80.7990185
 //     }
 const mongoose = require('./db/connection.js')
-const express = require(express)
+const express = require("express")
+const parser = require("body-parser")
 
 const app = express()
 
 let Shop = mongoose.model("Shop")
 
 app.set("port", process.env.PORT || 8000)
+app.use(parser.json({extended:true}))
+app.use(parser.urlencoded({extended:true}))
 
 
 app.get("/shops", (req,res)=>{
@@ -34,6 +37,13 @@ app.get("/shops", (req,res)=>{
 // 		res.json(data)
 // 	})
 // })
+
+
+
+app.get("/*", (req, res)=>{
+  res.sendFile(__dirname + "/src/public/index.html");
+});
+
 
 app.listen(app.get("port"), ()=>{
 	console.log("Up and runnning on port 8000")
