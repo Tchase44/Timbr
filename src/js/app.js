@@ -8,7 +8,19 @@
 		"$locationProvider",
 		routes
 	])
-	.controller(,[])
+	.controller("",[])
+	// .factory("Contest", [
+	//   "$resource",
+	//   ContestFactory
+	// ])
+	// .controller("IndexController", [
+	//   "$state",
+	//   "$stateParams",
+	//   "Contest",
+	//    IndexControllerFunction
+	// ])
+
+	
 /*
 */
 function routes(){

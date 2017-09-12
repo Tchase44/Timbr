@@ -41,7 +41,7 @@ app.get("/shops", (req,res)=>{
 
 
 app.get("/*", (req, res)=>{
-  res.sendFile(__dirname + "/src/public/index.html");
+  res.sendFile(__dirname + "./index.html");
 });
 
 
