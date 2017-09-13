@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
+import Header from "./header.js"
 
-import './App.css';
 
 class App extends Component {
+  componentWillMount(){}
+  // render
+  componentDidMount(){}
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-            <h1>Welcome to Timbr Co.</h1>
-            <h2>One Place For</h2>
-            <h2>All Your Woodworking Needs</h2>
-        </div>
-        
+        <Header className="App-header">
+        </Header>
       </div>
     );
   }
