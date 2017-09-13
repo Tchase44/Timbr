@@ -5,13 +5,13 @@
 //         "lon": -80.7990185
 //     }
 const mongoose = require('./db/connection.js')
-const express = require(express)
+const express = require('express')
 
 const app = express()
 
 let Shop = mongoose.model("Shop")
 
-app.set("port", process.env.PORT || 8000)
+app.set("port", process.env.PORT || 3000)
 
 
 app.get("/shops", (req,res)=>{
@@ -36,5 +36,5 @@ app.get("/shops", (req,res)=>{
 // })
 
 app.listen(app.get("port"), ()=>{
-	console.log("Up and runnning on port 8000")
+	console.log("Up and runnning on port 3000")
 })
