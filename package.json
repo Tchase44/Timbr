@@ -9,13 +9,12 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
-  "keywords": [],
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "mongoose": "^4.11.8",
     "vue": "^2.3.3",
-    "axios": "^0.16.2",
+    "axios": "^0.16.2"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
