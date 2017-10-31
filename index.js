@@ -1,27 +1,24 @@
-// const location = {
-//     "zipcode": "28205",
-//     "location": {
-//         "lat": 35.2263714,
-//         "lon": -80.7990185
-//     }
+
 const mongoose = require('./db/connection.js')
-const express = require("express")
-const parser = require("body-parser")
+const express = require('express')
 
 const app = express()
 
 let Shop = mongoose.model("Shop")
 
 app.set("port", process.env.PORT || 8000)
-app.use(parser.json({extended:true}))
-app.use(parser.urlencoded({extended:true}))
 
 
 app.get("/shops", (req,res)=>{
-	Shop.find({}).then((data)=>{
-		res.json(data)
+	Shop.find({}).then((Shops)=>{
+		res.json(Shops)
 	})
 })
+//app.get("/shops/:id", (req,res)=>{
+	// Shop.findOne({}).then((shop)=>{
+		// res.json(shop)
+	// })
+// })
 // app.post("/shops", (req,res)=>{
 // 	Shop.create(req.body).then((newShop)=>{
 // 		res.json(newShop)
@@ -37,13 +34,6 @@ app.get("/shops", (req,res)=>{
 // 		res.json(data)
 // 	})
 // })
-
-
-
-app.get("/*", (req, res)=>{
-  res.sendFile(__dirname + "./index.html");
-});
-
 
 app.listen(app.get("port"), ()=>{
 	console.log("Up and runnning on port 8000")
