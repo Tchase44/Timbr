@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
 let DealerSchema = mongoose.Schema({
                 companyID: Number,
@@ -12,9 +12,9 @@ let DealerSchema = mongoose.Schema({
                 country: String,
                 zipcode: Number,
                 weekHours: Object
-})
+});
 
-mongoose.model("Shop",DealerSchema)
-mongoose.connect("mongodb:/localhost/timbr")
+mongoose.model("Shop",DealerSchema);
+mongoose.connect("mongodb://localhost/timbr");
 
-module.exports = mongoose
+module.exports = mongoose;

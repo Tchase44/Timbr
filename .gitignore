@@ -1,0 +1,7 @@
+#add 'node_modules' to .gitignore file
+
+#git rm -r --cached node_modules
+#git commit -m 'Removing node_modules'
+
+#node
+node_modules

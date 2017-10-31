@@ -15,10 +15,15 @@ app.set("port", process.env.PORT || 8000)
 
 
 app.get("/shops", (req,res)=>{
-	Shop.find({}).then((data)=>{
-		res.json(data)
+	Shop.find({}).then((Shops)=>{
+		res.json(Shops)
 	})
 })
+//app.get("/shops/:id", (req,res)=>{
+	// Shop.findOne({}).then((shop)=>{
+		// res.json(shop)
+	// })
+// })
 // app.post("/shops", (req,res)=>{
 // 	Shop.create(req.body).then((newShop)=>{
 // 		res.json(newShop)
