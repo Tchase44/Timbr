@@ -8,11 +8,20 @@
 		"$locationProvider",
 		routes
 	])
-	.controller("",[])
-	// .factory("Contest", [
-	//   "$resource",
-	//   ContestFactory
-	// ])
+	.controller("Landingtrlr",[
+			"$state",
+			"$stateParams",
+			"LandCtrlrFun"
+		])
+	.controller("HomeCtrlr",[
+			"$state",
+			"$stateParams",
+			"HomeCtrlrFun"	
+		])
+	.factory("Store", [
+	  "$resource",
+	  StoreFactory
+	])
 	// .controller("IndexController", [
 	//   "$state",
 	//   "$stateParams",
@@ -26,13 +35,26 @@
 function routes(){
 	$locationProvider.html5Mode(true);
 	$stateProvider
-	.state("home",
+	.state("landing",
 		url: "/",
-		templateUrl: "js/ng-views/",
-		controller: "",
-		controllerAs: ""
+		templateUrl: "js/ng-views/landing",
+		controller: "Landingtrlr",
+		controllerAs: "vm"
+	)
+	.state("home",
+		url: "/home",
+		templateUrl: "js/ng-views/home",
+		controller: "HomeCtrlr",
+		controllerAs: "HomeVM"
 	)
 }
+function StoreFactory($resource){
 
+}
+function LandCtrlrFun($state,$stateParams){
 
+}
+function HomeCtrlrFun($state,$stateParams){
+
+}
 })()
