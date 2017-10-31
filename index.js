@@ -6,7 +6,7 @@ const app = express()
 
 let Shop = mongoose.model("Shop")
 
-app.set("port", process.env.PORT || 8000)
+app.set("port", process.env.PORT || 8080)
 
 
 app.get("/shops", (req,res)=>{
@@ -36,5 +36,5 @@ app.get("/shops", (req,res)=>{
 // })
 
 app.listen(app.get("port"), ()=>{
-	console.log("Up and runnning on port 8000")
+	console.log("Up and runnning on port 8080")
 })

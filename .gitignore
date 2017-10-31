@@ -3,5 +3,19 @@
 #git rm -r --cached node_modules
 #git commit -m 'Removing node_modules'
 
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+
 #node
 node_modules
