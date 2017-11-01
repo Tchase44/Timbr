@@ -1,15 +1,17 @@
 <template>
-	<h1>shop show page</h1>
+	<div>
+		<h1>Contact Page</h1>
+	</div>
 </template>
 <script>
 	export default {
-		name: "shop",
+		name: 'Contact',
 		data(){
 			return{}
 		}
 	}
-
 </script>
 <style>
 	
 </style>
+

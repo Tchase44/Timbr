@@ -1,6 +1,5 @@
 <template>
   <main>
-    <h1>Welcome to Timbr Co.</h1>
     {{msg}}
   </main>
 </template>
@@ -12,8 +11,14 @@ export default {
     return {
       msg: 'home page listing of all shops'
     }
-  }
+  },
   // components: {}
+  // beforeCreate(){},
+  // created(){},
+  // beforeMount(){},
+  // mounted(){},
+  // beforeDestroy(){},
+  // destroyed(){},
 }
 
 </script>

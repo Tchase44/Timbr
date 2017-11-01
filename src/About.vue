@@ -1,15 +1,17 @@
 <template>
-	<h1>shop show page</h1>
+	<div>
+		<h1>About page</h1>
+	</div>
 </template>
 <script>
 	export default {
-		name: "shop",
+		name: 'About',
 		data(){
 			return{}
 		}
 	}
-
 </script>
 <style>
 	
 </style>
+
