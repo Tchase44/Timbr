@@ -7,8 +7,13 @@ const app = express()
 
 let Shop = mongoose.model("Shop")
 
-app.set("port", process.env.PORT || 8080)
+app.set("port", process.env.PORT || 8000)
 
+app.all('/*', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+ });
 
 app.get("/shops", (req,res)=>{
 	Shop.find({}).then((Shops)=>{
@@ -37,5 +42,5 @@ app.get("/shops", (req,res)=>{
 // })
 
 app.listen(app.get("port"), ()=>{
-	console.log("Up and runnning on port 8080")
+	console.log("Up and runnning on port 8000")
 })

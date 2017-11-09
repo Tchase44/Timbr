@@ -23,20 +23,33 @@
 	.navi{
 		width: 100%;
 		min-width: 354px;
+		height: 40px;
+		box-shadow: 0px 0px 5px #000;
+		line-height: 40px;
 		background: rgb(6, 86, 12);
-		background: #06560c;
+		background: #476D00;
 		text-align: center;
 	}
 	.barbox{
 		text-decoration: none;
-		color: #fff;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-weight: bold;
+		color: #dadddd;
 		display: inline-block;
-		margin: 5px;
-		padding: 0 30px;
+		padding: 0 50px;
+	}
+	.barbox:hover{
+		background: #3A5900;
+		color: #fff;
 	}
 	.seperator{
-		border-left: 2px solid #efe;
-		border-right: 2px solid #efe;
+		border-left: 2px solid #dadddd;;
+		border-right: 2px solid #dadddd;;
+	}
+	@media screen and (max-width: 470px) {
+		.barbox{
+			padding: 0 30px;
+		}		
 	}
 </style>
 
