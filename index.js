@@ -1,15 +1,24 @@
 
 const mongoose = require('./db/connection.js')
 const express = require('express')
-
+const cons = require('consolidate')
 const app = express()
 
 let Shop = mongoose.model("Shop")
 
 app.set("port", process.env.PORT || 8000)
 
+//
+app.engine('dust', cons.dust);
+// set .html as the default extension
+app.set('view engine', 'dust');
+app.set('views', __dirname + '/views');
 
-app.get("/shops", (req,res)=>{
+app.get('/', (req,res)=>{
+	res.render(index)
+})
+
+app.get("/api/shops", (req,res)=>{
 	Shop.find({}).then((Shops)=>{
 		res.json(Shops)
 	})

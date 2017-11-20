@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "consolidate": "^0.15.0",
+    "dustjs-linkedin": "^2.7.5",
     "express": "^4.15.4",
-    "mongoose": "^4.11.8",
+    "mongoose": "^4.11.8"
   }
 }
