@@ -1,10 +1,10 @@
 
-const mongoose = require('./db/connection.js')
+// const mongoose = require('./db/connection.js')
 const express = require('express')
 const cons = require('consolidate')
 const app = express()
 
-let Shop = mongoose.model("Shop")
+// let Shop = mongoose.model("Shop")
 
 app.set("port", process.env.PORT || 8000)
 
@@ -15,7 +15,7 @@ app.set('view engine', 'dust');
 app.set('views', __dirname + '/views');
 
 app.get('/', (req,res)=>{
-	res.render(index)
+	res.render('landing')
 })
 
 app.get("/api/shops", (req,res)=>{
