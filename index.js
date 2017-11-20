@@ -15,7 +15,7 @@ app.set('view engine', 'dust');
 app.set('views', __dirname + '/views');
 
 app.get('/', (req,res)=>{
-	res.render('landing')
+	res.render('index')
 })
 
 app.get("/api/shops", (req,res)=>{
