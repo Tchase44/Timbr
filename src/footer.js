@@ -1,10 +1,10 @@
-import React, { component }  from 'react'
+import React, { Component }  from 'react'
 
-export class Footer extends component{
+class Footer extends Component{
 	render() {
 		return (
 			<footer>
-				<h4>This is a Footer</h4>
+				<h4>This is Footer</h4>
 			</footer>
 		);
 	}

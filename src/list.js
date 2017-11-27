@@ -145,6 +145,7 @@ const shops = [
 
 
 export class List extends Component {
+    componentDidMount(){}
 	render() {
 		let shopList = shops.map((shop, idx)=>{
 			return(
