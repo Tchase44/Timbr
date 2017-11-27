@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import Header from "./header.js"
 import List from "./list.js"
 import Footer from "./footer.js"
+import "./styles/App.css"
 
 class App extends Component {
-  componentDidMount(){}
+  componentDidMount(){
+    // possable api call here
+  }
   render() {
     return (
       <div className="App">
