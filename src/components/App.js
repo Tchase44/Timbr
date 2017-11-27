@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from "./header.js"
 import List from "./list.js"
 import Footer from "./footer.js"
-import "./styles/App.css"
+import "../styles/App.css"
 
 class App extends Component {
   componentDidMount(){
@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <Header className="App-header"></Header>
         <List />
-        <Footer />
+        <Footer className="App-footer"/>
       </div>
     );
   }
