@@ -1,10 +1,10 @@
 
-// const mongoose = require('./db/connection.js')
+const mongoose = require('./db/connection.js')
 const express = require('express')
 const cons = require('consolidate')
 const app = express()
 
-// let Shop = mongoose.model("Shop")
+let Shop = mongoose.model("Shop")
 
 app.set("port", process.env.PORT || 8000)
 
@@ -20,7 +20,7 @@ app.get('/', (req,res)=>{
 
 app.get("/api/shops", (req,res)=>{
 	Shop.find({}).then((Shops)=>{
-		res.json(Shops)
+		res.render('shops',{shop: Shops})
 	})
 })
 //app.get("/shops/:id", (req,res)=>{

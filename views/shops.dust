@@ -1,0 +1,3 @@
+<li>
+	{#shop}{name}{/shop}
+</li>
