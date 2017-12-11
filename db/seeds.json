@@ -7,9 +7,9 @@
                 "addressLine1": "1234 Some Street",
                 "addressLine2": "",
                 "city": "Charlotte",
-                "state": "North Carolina",
+                "state": "NC",
                 "country": "US",
-                "zipcode": "28205",
+                "zipcode": "28204",
                 "weekHours": {
                     "mon": "7:00am - 7:00pm",
                     "tue": "7:00am - 7:00pm",
@@ -27,9 +27,9 @@
                 "addressLine1": "1234 Some Street",
                 "addressLine2": "",
                 "city": "Charlotte",
-                "state": "North Carolina",
+                "state": "NC",
                 "country": "US",
-                "zipcode": "28205",
+                "zipcode": "28204",
                 "weekHours": {
                     "mon": "7:00am - 7:00pm",
                     "tue": "7:00am - 7:00pm",
@@ -47,7 +47,7 @@
                 "addressLine1": "1234 Some Street",
                 "addressLine2": "",
                 "city": "Charlotte",
-                "state": "North Carolina",
+                "state": "NC",
                 "country": "US",
                 "zipcode": "28205",
                 "weekHours": {
@@ -67,7 +67,7 @@
                 "addressLine1": "1234 Some Street",
                 "addressLine2": "",
                 "city": "Charlotte",
-                "state": "North Carolina",
+                "state": "NC",
                 "country": "US",
                 "zipcode": "28205",
                 "weekHours": {
@@ -87,7 +87,7 @@
                 "addressLine1": "1234 Some Street",
                 "addressLine2": "",
                 "city": "Charlotte",
-                "state": "North Carolina",
+                "state": "NC",
                 "country": "US",
                 "zipcode": "28205",
                 "weekHours": {
@@ -107,7 +107,7 @@
                 "addressLine1": "1234 Some Street",
                 "addressLine2": "",
                 "city": "Charlotte",
-                "state": "North Carolina",
+                "state": "NC",
                 "country": "US",
                 "zipcode": "28205",
                 "weekHours": {
@@ -127,7 +127,7 @@
                 "addressLine1": "1234 Some Street",
                 "addressLine2": "",
                 "city": "Charlotte",
-                "state": "North Carolina",
+                "state": "NC",
                 "country": "US",
                 "zipcode": "28205",
                 "weekHours": {

@@ -4,6 +4,7 @@
 	<title>Timbr</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="">
+	
 </head>
 <body>
 	<h1>Welcome to Timbr Co.</h1>
@@ -11,7 +12,8 @@
 	<h2>All Your Woodworking Needs</h2>
 	
 	<div id="template">
-      <h1>Partial Goes Here</h1>
+      {> shops /}
     </div>
+    <script type="text/javascript" src="shops.js"></script>
 </body>
 </html>
